@@ -111,7 +111,7 @@ class Fetch:
 		return json.loads(self.res.text)
 
 class Result:
-	def __init__(self, request: Fetch):
+	def __init__(self, request):
 		self.fetch = request
 	
 	def __repr__(self):
