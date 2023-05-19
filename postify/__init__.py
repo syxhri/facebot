@@ -24,7 +24,7 @@ class Fetch:
 		method = kwargs['method']
 		args = '<Fetch [{}]; '.format(method)
 		for key, value in self.kwargs.items():
-			if args == f'<Fetch [{}]; '.format(method):
+			if args == '<Fetch [{}]; '.format(method):
 				args += '{}={}'.format(key, value)
 			else:
 				args += ', {}={}'.format(key, value)
