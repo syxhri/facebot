@@ -19,12 +19,12 @@ class DALL_E:
 	
 	def generate(self, prompt):
 		path = os.getcwd()
-		res = requests.get(f'https://api.syhr.my.id/openai/dall_e/?apikey={}&q={}'.format(self.apikey, prompt))
+		res = requests.get('https://api.syhr.my.id/openai/dall_e/?apikey={}&q={}'.format(self.apikey, prompt))
 		"""if res.ok:
 			res = requests.get('https://api.syhr.my.id/openai/dall_e/image.jpg')"""
 		if res.ok:
-			open(f'{path}/image.jpg', 'wb').write(res.content)
+			open('{path}/image.jpg', 'wb').write(res.content)
 			self.image_path = '{}/image.jpg'.format(path)
-			self.image = open(f'{}/image.jpg', 'rb'.format(path))
+			self.image = open('{}/image.jpg', 'rb'.format(path))
 		else:
 			self.error = res.text
