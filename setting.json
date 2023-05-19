@@ -1,0 +1,13 @@
+{
+	"prefix": "#$-+/:;!?.~•=>",
+	"commands": [
+		{
+			"cmd": "ping",
+			"desc": "Pong 🏓"
+		},
+		{
+			"cmd": "toimg",
+			"desc": "Generate text/prompt to image"
+		}
+	]
+}
